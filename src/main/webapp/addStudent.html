@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add student</title>
+
+  <style>
+    div {
+      margin: auto;
+    }
+    input,h1 {
+      display: inline-block;
+      margin: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>Add student</h1>
+  <form action="/addStudent" method="post">
+    <label>
+      <input type="text" placeholder="group num" name="group">
+    </label><br>
+    <label>
+      <input type="text" placeholder="student lastname & initials" name="student_info">
+    </label><br>
+    <label>
+      <input type="number" placeholder="subject first" name="first" min="1" max="5">
+    </label><br>
+    <label>
+      <input type="number" placeholder="subject second" name="second" min="1" max="5">
+    </label><br>
+    <label>
+      <input type="number" placeholder="subject third" name="third" min="1" max="5">
+    </label><br>
+    <input type="submit"><br>
+  </form>
+</div>
+
+</body>
+</html>
